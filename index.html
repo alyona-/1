@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Награды участника</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<h1><span class="star">&#10029;&#10029;&#10029;&#10029;&#10029;</span>Стена славы<span class="star">&#10029;&#10029;&#10029;&#10029;&#10029;</span></h1>
+
+<hr>
+<script>
+    template ={};
+    template.parent_1 ='<div class="box">';
+    template.parent_2 = '</div>';
+    template.str = '<div class="a4ivka">'+
+    '<div class="bonus"> </div>'+
+    '<label class="icon_label" >'+
+    '<input type="file" class="icon_input" name="files[0]" >'+
+    '</label>'+
+    '<span class="bonus_text">';
+
+    template.str2 ='</span>'+
+    '</div>';
+    template.number=1;
+    for(var i= 0;i<100;i++) {
+        if(i==0) document.write(template.parent_1);
+        document.write(template.str + template.number + template.str2);
+        template.number++;
+        if(i==99) document.write(template.parent_2);
+    }
+
+
+</script>
+
+
+
+<script src="scripts.js"></script>
+
+
+
+
+
+
+</body>
+</html>
